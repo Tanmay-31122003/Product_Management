@@ -1,0 +1,15 @@
+<mat-card class="product-card">
+    <img mat-card-image [src]="product.image" alt="Product Image">
+    <div class="product-details">
+        <h1>{{product.Name}}</h1>
+        <h2>{{product.Brand}}</h2>
+        <div class="price-info">
+            <span class="current-price">Rs. {{product.currentPrice}}</span>
+            <span class="original-price"><s>Rs. {{product.standardPrice}}</s></span>
+            <span class="discount">({{product.discount}}% off)</span>
+        </div>
+    </div>
+    <div>
+        <button mat-raised-button color="primary" (click)="view()">View</button>
+    </div>
+</mat-card>

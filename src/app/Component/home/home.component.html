@@ -1,0 +1,12 @@
+<div class="container">
+    <div>
+        <app-search (search)="onSearch($event)"></app-search>
+    </div>
+    @for (item of filteredProduct; track $index) {
+        <div class="card">
+            <div class="card-content">
+                <app-product-card [product]="item" (viewProduct)="onViewProduct($event)"></app-product-card>
+            </div>
+        </div>
+    }
+</div>

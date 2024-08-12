@@ -1,0 +1,11 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; // Add space between the input field and button
+}
+  
+.search-field {
+    width: 300px; // You can adjust the width as needed
+}
+  

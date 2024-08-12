@@ -1,0 +1,92 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; // Adjust as needed
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-details {
+    padding: 16px;
+    text-align: center;
+}
+
+.product-details h1 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+
+.product-details h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    color: #666;
+}
+
+.price-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.price-info .current-price {
+    font-size: 1.5em;
+    color: #e53935;
+    font-weight: bold;
+}
+
+.price-info .original-price {
+    font-size: 1.2em;
+    color: #999;
+}
+
+.price-info .discount {
+    font-size: 1.2em;
+    color: #4caf50;
+}
+
+button {
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Add shadow
+}
+
+button:hover {
+    background-color: #303f9f;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); // Increase shadow on hover
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.5), 0 4px 6px rgba(0, 0, 0, 0.1); // Add focus ring and shadow
+}
