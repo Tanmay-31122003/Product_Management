@@ -4,7 +4,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { Product } from '../../types/Product';
 import { ProductService } from '../../product.service';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-product-detail',
@@ -14,7 +15,8 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
   styleUrl: './product-detail.component.scss'
 })
 export class ProductDetailComponent {
-
+  router=inject(Router)
+  toastrService=inject(ToastrService);
   product!:Product
   constructor(public productService : ProductService){}
   activatedRoute=inject(ActivatedRoute);
@@ -23,6 +25,16 @@ export class ProductDetailComponent {
     this.productService.getProductById(productId).subscribe(result=>{
       this.product=result;
     })
+  }
+
+  delete(id:number){
+    const ok=confirm("Are you sure want to delete product");
+    if(ok){
+      this.productService.deleteProduct(id).subscribe(result=>{
+        this.toastrService.success("Delete succesfully...")
+        this.router.navigateByUrl("/");
+      })
+    }
   }
 
 }

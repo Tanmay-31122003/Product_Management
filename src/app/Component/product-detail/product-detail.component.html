@@ -17,6 +17,7 @@
         </div>
         <div>
             <button mat-raised-button color="accent" [routerLink]="'/edit-product/'+product.id">Edit</button>
+            <button mat-raised-button color="accent" (click)="delete(product.id!)">Delete</button>
         </div>
     </mat-card>
 </div>

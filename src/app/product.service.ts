@@ -21,4 +21,7 @@ export class ProductService {
   updateProduct(product:Product){
     return this.httpClient.put<Product[]>("http://localhost:3000/products/"+product.id,product)
   }
+  deleteProduct(id:number){
+    return this.httpClient.delete<Product>("http://localhost:3000/products/"+id)
+  }
 }
