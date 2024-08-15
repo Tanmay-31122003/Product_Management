@@ -1,1 +1,22 @@
-<p>product-detail works!</p>
+<div style="display: flex; justify-content: center;">
+    <mat-card class="product-card">
+        <img mat-card-image [src]="product.image" alt="Product Image">
+        <div class="product-details">
+            <h1>{{product.Name}}</h1>
+            <h2>{{product.Brand}}</h2>
+            <div class="price-info">
+                <span class="current-price">Rs. {{product.currentPrice}}</span>
+                <span class="original-price"><s>Rs. {{product.standardPrice}}</s></span>
+                <span class="discount">({{product.discount}}% off)</span>
+            </div>
+            <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel sem at felis tempor faucibus. 
+                Nulla facilisi. Donec nec mauris sed nunc luctus dictum. Etiam lacinia magna ut dolor varius, sed 
+                laoreet neque dapibus.
+            </p>
+        </div>
+        <div>
+            <button mat-raised-button color="accent" [routerLink]="'/edit-product/'+product.id">Edit</button>
+        </div>
+    </mat-card>
+</div>

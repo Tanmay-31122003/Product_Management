@@ -1,49 +1,58 @@
 {
-    "products":[
-        {
-            "id": "1",
-            "Name": "OnePlus Buds 3",
-            "Brand": "OnePlus",
-            "image": "https://m.media-amazon.com/images/I/51h7CQTRJ1L._SX522_.jpg",
-            "currentPrice": "899",
-            "standardPrice": "1299",
-            "discount": "40"
-          },
-          {
-            "id": "1",
-            "Name": "OnePlus Buds 3",
-            "Brand": "OnePlus",
-            "image": "https://m.media-amazon.com/images/I/51h7CQTRJ1L._SX522_.jpg",
-            "currentPrice": "899",
-            "standardPrice": "1299",
-            "discount": "40"
-          },
-          {
-            "id": "2",
-            "Name": "Mivi SuperPods Halo",
-            "Brand": "Mivi",
-            "image": "https://m.media-amazon.com/images/I/71UWzz+rEbL._AC_UY327_FMwebp_QL65_.jpg",
-            "currentPrice": "999",
-            "standardPrice": "1199",
-            "discount": "50"
-          },
-          {
-            "id": "3",
-            "Name": "Noise Buds N1",
-            "Brand": "Noise",
-            "image": "https://m.media-amazon.com/images/I/61WAxDWqh3L._SX522_.jpg",
-            "currentPrice": "1099",
-            "standardPrice": "1299",
-            "discount": "32"
-          },
-          {
-            "id": "4",
-            "Name": "Boult Audio W20",
-            "Brand": "Boult",
-            "image": "https://m.media-amazon.com/images/I/41ngreKJBDL._SX300_SY300_QL70_FMwebp_.jpg",
-            "currentPrice": "1199",
-            "standardPrice": "1599",
-            "discount": "30"
-          }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "Name": "OnePlus Buds 3",
+      "Brand": "OnePlus Nord",
+      "image": "https://m.media-amazon.com/images/I/51h7CQTRJ1L._SX522_.jpg",
+      "currentPrice": "899",
+      "standardPrice": "1299",
+      "discount": "40"
+    },
+    {
+      "id": "1",
+      "Name": "OnePlus Buds 3",
+      "Brand": "OnePlus",
+      "image": "https://m.media-amazon.com/images/I/51h7CQTRJ1L._SX522_.jpg",
+      "currentPrice": "899",
+      "standardPrice": "1299",
+      "discount": "40"
+    },
+    {
+      "id": "2",
+      "Name": "Mivi SuperPods Halo",
+      "Brand": "Mivi",
+      "image": "https://m.media-amazon.com/images/I/71UWzz+rEbL._AC_UY327_FMwebp_QL65_.jpg",
+      "currentPrice": "999",
+      "standardPrice": "1199",
+      "discount": "50"
+    },
+    {
+      "id": "3",
+      "Name": "Noise Buds N1 neo",
+      "Brand": "Noise",
+      "image": "https://m.media-amazon.com/images/I/61WAxDWqh3L._SX522_.jpg",
+      "currentPrice": "1199",
+      "standardPrice": "1499",
+      "discount": "30"
+    },
+    {
+      "id": "4",
+      "Name": "Boult Audio W20",
+      "Brand": "Boult",
+      "image": "https://m.media-amazon.com/images/I/41ngreKJBDL._SX300_SY300_QL70_FMwebp_.jpg",
+      "currentPrice": "1199",
+      "standardPrice": "1599",
+      "discount": "30"
+    },
+    {
+      "id": "dc0b",
+      "Name": "Realme Buds 2",
+      "Brand": "Realme",
+      "image": "https://rukminim2.flixcart.com/image/612/612/k20r8nk0/headphone/7/w/c/realme-buds-2-original-imafhgrckbygsyrk.jpeg?q=70",
+      "currentPrice": "598",
+      "standardPrice": "799",
+      "discount": "25"
+    }
+  ]
 }

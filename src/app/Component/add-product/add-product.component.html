@@ -1,0 +1,27 @@
+<div class="container">
+    <form class="form-container" (ngSubmit)="addProduct()">
+        <div class="form-content">
+            <mat-form-field>
+                <input matInput [(ngModel)]="product.Name" name="Name" placeholder="enter product name...">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput [(ngModel)]="product.Brand" name="Brand" placeholder="enter product Brand...">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput [(ngModel)]="product.image" name="image" placeholder="enter product image url...">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput [(ngModel)]="product.currentPrice" name="currentPrice" placeholder="enter product currentPrice...">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput [(ngModel)]="product.standardPrice" name="standardPrice" placeholder="enter product standardPrice...">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput [(ngModel)]="product.discount" name="discount" placeholder="enter product discount...">
+            </mat-form-field>
+        </div>
+        <div>
+            <button type="submit" mat-raised-button color="primary">Add</button>
+        </div>
+    </form>
+</div>

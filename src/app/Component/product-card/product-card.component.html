@@ -2,10 +2,10 @@
     <img mat-card-image [src]="product.image" alt="Product Image">
     <div class="product-details">
         <h1>{{product.Name}}</h1>
-        <h2>{{product.Brand}}</h2>
+        <h2>{{product.Brand | uppercase}}</h2>
         <div class="price-info">
-            <span class="current-price">Rs. {{product.currentPrice}}</span>
-            <span class="original-price"><s>Rs. {{product.standardPrice}}</s></span>
+            <span class="current-price">{{product.currentPrice | rupee}}</span>
+            <span class="original-price"><s>{{product.standardPrice | rupee}}</s></span>
             <span class="discount">({{product.discount}}% off)</span>
         </div>
     </div>

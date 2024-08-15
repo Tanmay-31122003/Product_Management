@@ -1,0 +1,27 @@
+<div class="container">
+    <form [formGroup]="productForm" class="form-container" (ngSubmit)="editProduct()">
+        <div class="form-content">
+            <mat-form-field>
+                <input matInput formControlName="Name" name="Name" placeholder="enter product name...">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="Brand" name="Brand" placeholder="enter product Brand...">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="image" name="image" placeholder="enter product image url...">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="currentPrice" name="currentPrice" placeholder="enter product currentPrice...">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="standardPrice" name="standardPrice" placeholder="enter product standardPrice...">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="discount" name="discount" placeholder="enter product discount...">
+            </mat-form-field>
+        </div>
+        <div>
+            <button type="submit" mat-raised-button color="primary">Edit</button>
+        </div>
+    </form>
+</div>
